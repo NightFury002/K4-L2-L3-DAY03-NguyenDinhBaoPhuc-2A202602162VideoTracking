@@ -1,0 +1,69 @@
+{
+  "clip": "clip_02",
+  "frames": 60,
+  "iou_threshold": 0.5,
+  "pred_file": "annotations\\clip_02\\gt.txt",
+  "gt_file": "data\\clips\\clip_02\\gt\\gt.txt",
+  "pred_label": "PRED annotations\\clip_02\\gt.txt",
+  "gt_label": "GT   data\\clips\\clip_02\\gt\\gt.txt",
+  "metrics": {
+    "HOTA": 0.8556,
+    "DetA": 0.8309,
+    "AssA": 0.8988,
+    "LocA": 0.8785,
+    "IDF1": 0.9825,
+    "IDTP": 225,
+    "IDFP": 6,
+    "IDFN": 2,
+    "MOTA": 0.9648,
+    "MOTP": 0.8667,
+    "IDSW": 0,
+    "FP": 6,
+    "FN": 2,
+    "GT_boxes": 227,
+    "PRED_boxes": 231
+  },
+  "gate": {
+    "checks": {
+      "IDF1": {
+        "value": 0.982532751091703,
+        "required": 0.8,
+        "passed": true
+      },
+      "MOTA": {
+        "value": 0.9647577092511013,
+        "required": 0.75,
+        "passed": true
+      },
+      "MOTP": {
+        "value": 0.8667088926207036,
+        "required": 0.7,
+        "passed": true
+      }
+    },
+    "passed": true
+  },
+  "diagnostics": {
+    "missed_gt_tracks": [],
+    "fragmented_gt_tracks": [],
+    "partially_covered_gt_tracks": [],
+    "ghost_pred_tracks": [],
+    "id_switches": [],
+    "loose_boxes": [
+      {
+        "frame": 16,
+        "gt_track": 5,
+        "pred_track": 5,
+        "iou": 0.542
+      },
+      {
+        "frame": 56,
+        "gt_track": 4,
+        "pred_track": 4,
+        "iou": 0.544
+      }
+    ],
+    "n_gt_tracks": 6,
+    "n_pred_tracks": 6
+  }
+}
